@@ -1,0 +1,58 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#game {
+    position: relative;
+    width: 100%px;
+    height: 650px;
+    background: url('Images/Space.jpg') no-repeat center center;
+    background-size: cover;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#rocket {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background: url('/Images/Rocket.png') no-repeat center center;
+    background-size: contain;
+    bottom: 20px;
+    left: 375px;
+}
+
+#bullet {
+    position: absolute; /* Position bullet relative to the rocket */
+    width: 10px;
+    height: 20px;
+    background: url('Images/Bullet.png') no-repeat center center;
+    background-size: contain;
+    visibility: hidden; /* Start as hidden, visible when shooting */
+    left: 50%; /* Center horizontally relative to the rocket */
+    top: -20px; /* Position above the rocket */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+#chickens {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 20px;
+}
+
+.chicken {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url('/Images/Chicken.png') no-repeat center center;
+    background-size: contain;
+    float: left;
+    margin: 10px;
+    display: flex;
+
+
+}
